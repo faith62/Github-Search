@@ -24,4 +24,19 @@ export class GithubService {
   		this.repository = new Repository("","","",new Date(),"","","",new Date()); 	
 
   }
+  getUserData(username: string){
+    this.repoData.length = 0;
+
+    interface ApiResponse{
+      bio:string,
+      public_repos:number,
+      login:string,
+      avatar_url:string,
+      created_at:Date, 
+      updated_at:Date,
+      name:string,
+      full_name:string, 
+      html_url:string   
+    }
+  }
 }
