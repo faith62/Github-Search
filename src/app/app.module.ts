@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { GithubComponent } from './github/github.component';
 import { GithubFormComponent } from './github-form/github-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { GithubResultsComponent } from './github-results/github-results.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GithubComponent,
     GithubFormComponent,
-    NavbarComponent
+    NavbarComponent,
+    GithubResultsComponent
   ],
   imports: [
     BrowserModule,

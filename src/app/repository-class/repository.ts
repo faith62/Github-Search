@@ -1,3 +1,4 @@
+//add constructor inside repository class and defined public properties
 export class Repository {
     constructor(public name:string,
         public full_name:string,
