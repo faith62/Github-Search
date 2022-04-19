@@ -10,10 +10,10 @@ import { User } from '../user-class/user';
 })
 export class GithubResultsComponent implements OnInit {
 
-  user:User | undefined;
+  user:User;
   repoDetails = [];
   githubService: GithubService;
-  hideInput: boolean = false;
+  hideInput:boolean
 
   constructor(githubService:GithubService) {
     this.githubService =githubService;

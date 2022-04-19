@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,7 +20,8 @@ import { GithubService } from './github-service/github.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule  //application can now work with any number of forms that we create thanks to the FormsModule
   ],
   providers: [GithubService],
   bootstrap: [AppComponent]
