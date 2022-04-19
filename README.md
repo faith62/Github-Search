@@ -3,6 +3,7 @@
 Website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories.
 
 ![Landing Page].(https://github.com/faith62/Github-Search/blob/master/src/assets/search.png)
+![Landing Page].(https://github.com/faith62/Github-Search/blob/master/src/assets/search.png)
 ### By Faith Chemutai , 19/04/2022
 ## Setup/instalation Requirements
 *You need to have a vs code/ atom, angular CLI installed
