@@ -11,6 +11,17 @@
     margin-left:20% ;
     margin-right: 80%;
 } */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+img{
+    border-radius: 300px;
+    align-items: center;
+}
+
 .form-group{
     margin-left: 20%;
     margin-right: 20%;
