@@ -69,9 +69,9 @@ export class GithubService {
             resolve()
 
         },
-        error=>{
+        err=>{
 
-                reject(error)
+                reject(err)
             }
         )
     })
