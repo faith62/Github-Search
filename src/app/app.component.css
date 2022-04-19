@@ -2,7 +2,9 @@
     background-image: url(https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-deve-picture-id537331500?k=20&m=537331500&s=170667a&w=0&h=d48ysIqXW6-8v5at7Mmy8O0rs17L9ZUa0z3c1oZOo_o=);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1500px;
+    /* height: 1500px; */
+    min-height: 900px;
+    max-height: 3000px;
 
 
 }
