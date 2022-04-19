@@ -13,7 +13,7 @@ import { Repository } from '../repository-class/repository';
 export class GithubService {
 
   user:User;
-  reporitory:Repository;
+  repository:Repository;
   repoData=[];
   newUserData: any = [];
   showInput:boolean;

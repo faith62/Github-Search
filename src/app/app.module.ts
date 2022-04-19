@@ -9,6 +9,7 @@ import { GithubFormComponent } from './github-form/github-form.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GithubResultsComponent } from './github-results/github-results.component';
 import { GithubService } from './github-service/github.service';
+import { DaysAgoPipe } from './pipes/days-ago.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GithubService } from './github-service/github.service';
     GithubComponent,
     GithubFormComponent,
     NavbarComponent,
-    GithubResultsComponent
+    GithubResultsComponent,
+    DaysAgoPipe
   ],
   imports: [
     BrowserModule,
