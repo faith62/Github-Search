@@ -2,21 +2,21 @@
     <h2 class="text-center">Create a new github and repo search</h2>
     <hr>    
 
-<form (ngSubmit)='submitUsername()' #githubForm="ngForm" name="githubForm">
-    <div class="form-group">
-        <label for="exampleInputEmail1">UserName</label>
-        <input type="text" class="form-control" id="Username" [(ngModel)]= "username" name="username" #usename="ngModel" required placeholder="Enter GitHub username">
-        <!-- <div [hidden]="username.valid || username.pristine" class="alert alert-danger">
-            <p>Username is required</p>
+    <form (ngSubmit)='submitUsername()'         #githubForm="ngForm" name="githubForm">
+        <div class="form-group">
+            <label for="exampleInputEmail1">UserName</label>
+            <input type="text" class="form-control" id="Username" [(ngModel)]= "username" name="username" #usename="ngModel" required placeholder="Enter GitHub username">
+            <!-- <div [hidden]="username.valid || username.pristine" class="alert alert-danger">
+                <p>Username is required</p>
+            </div> -->
+
+        </div>
+        <!-- <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="UserName" placeholder="Enter GitHub Username...">
         </div> -->
 
-    </div>
-    <!-- <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="UserName" placeholder="Enter GitHub Username...">
-    </div> -->
-
-    <button type="submit" class="btn btn-primary">Search </button>
-</form>
+        <button type="submit" class="btn btn-primary">Search </button>
+    </form>
 </div>
 <app-github-results *ngIf="showData" (toggleBack)="showUserInput($event)"></app-github-results>

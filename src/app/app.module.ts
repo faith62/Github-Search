@@ -11,6 +11,7 @@ import { GithubResultsComponent } from './github-results/github-results.componen
 import { GithubService } from './github-service/github.service';
 import { DaysAgoPipe } from './pipes/days-ago.pipe';
 import { DaysCountPipe } from './pipes/days-count.pipe';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DaysCountPipe } from './pipes/days-count.pipe';
     NavbarComponent,
     GithubResultsComponent,
     DaysAgoPipe,
-    DaysCountPipe
+    DaysCountPipe,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
