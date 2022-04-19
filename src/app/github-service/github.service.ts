@@ -41,7 +41,7 @@ export class GithubService {
 
     let promise =new Promise<void>((resolve,reject)=>{
       // We then use the getmethod and pass to the API URL. we then call the subscribe function that takes in the response function that is called when the API request is successful and returns a response.
-        this.http.get<ApiResponse>(environment.apiUrl + username).toPromise().then(response=>{
+        this.http.get<ApiResponse>("https://api.github.com/users/" + username).toPromise().then(response=>{
             
             this.user.bio=response.bio;
             this.user.avatar_url=response.avatar_url;
@@ -59,7 +59,7 @@ export class GithubService {
         )
 
         
-        this.http.get<any>(environment.apiUrl + username + "/repos").toPromise().then(response=>{
+        this.http.get<any>("https://api.github.com/users/"+ username + "/repos").toPromise().then(response=>{
             for(var i=0; i<response.length; i++)
           {
             this.newUserData = new Repository(response[i].name,response[i].full_name,response[i].description,response[i].updated_at,response[i].html_url,response[i].clone_url,response[i].language,response[i].created_at);
