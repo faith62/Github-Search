@@ -1,0 +1,20 @@
+#myForm{
+    background-color: rgba(156, 192, 224, 0.932);
+    padding-top: 50px;
+    padding-bottom: 20px;
+   
+    
+}
+/* #myForm input{
+    margin-left:20% ;
+    margin-right: 80%;
+} */
+.form-group{
+    margin-left: 20%;
+    margin-right: 20%;
+    
+}
+button{
+    margin-left: 20%;
+    margin-top: 2%;
+}

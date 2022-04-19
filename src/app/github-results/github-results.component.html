@@ -1,32 +1,34 @@
 <!-- <app-github-form></app-github-form> -->
-<div>
-    <h5>{{user.login}}</h5>
-    <p class="bio">{{user.bio}}</p>
-    <p class="stat">Date joined:{{user.created_at|date}}</p>
-    <p class="stat">Last Update:{{user.updated_at|date}}</p>
-    <p class="stat">Number of Repository:{{user.public_repos}}</p>
-    <p class="stat"><i class="fa fa-github-alt" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<a href="{{user.html_url}}" target="_blank">View Github Profile</a></p>
-</div>
-<div class="col-md-5">
-    <a class="btn btn-default btn-xs" (click)="goBack()" >Go Back</a>
-    <hr>
-    <div class="panel panel-default" >
-        <div class="panel-heading">
-            <h3 class="panel-title"></h3>
-        </div>
-        <div class="panel-body repo-detail">                    
-            <div class="git-results">                        
-                <div class="media mb15" *ngFor='let repoDetail of repoDetails'><!-- Loops Through Repository Instance Created from the APIResponse   -->
-                    <div class="media-body">
-                      <h4 class="filename text-success"><a href="{{repoDetail.html_url}}" target="_blank">{{repoDetail.name}}</a></h4>
-                      <small class="last-update">Created At:{{repoDetail.created_at|date}}&nbsp;&nbsp;|&nbsp;&nbsp;<i class="fa fa-clone" aria-hidden="true"></i>&nbsp;&nbsp;Clone:&nbsp;&nbsp;{{repoDetail.clone_url}}</small>
-                      <p class="description">{{repoDetail.description}}</p>
-                      <small class="last-update">Language: {{repoDetail.language}}&nbsp;&nbsp;|&nbsp;&nbsp;Last Updated: {{repoDetail.updated_at|daysCount}} Days Ago</small>
-                  </div>
-              </div>                       
-          </div>                  
-      </div>
+<div class="container" id="result">
+    <div>
+        <h5>{{user.login}}</h5>
+        <p class="bio">{{user.bio}}</p>
+        <p class="stat">Date joined:{{user.created_at|date}}</p>
+        <p class="stat">Last Update:{{user.updated_at|date}}</p>
+        <p class="stat">Number of Repository:{{user.public_repos}}</p>
+        <p class="stat"><i class="fa fa-github-alt" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;<a href="{{user.html_url}}" target="_blank">View Github Profile</a></p>
     </div>
-   
+    <div class="col-md-5">
+        <a class="btn btn-default btn-xs" (click)="goBack()" > <strong>Go Back</strong>  </a>
+        <hr>
+        <div class="panel panel-default" >
+            <div class="panel-heading">
+                <h3 class="panel-title"></h3>
+            </div>
+            <div class="panel-body repo-detail">                    
+                <div class="git-results">                        
+                    <div class="media mb15" *ngFor='let repoDetail of repoDetails'><!-- Loops Through Repository Instance Created from the APIResponse   -->
+                        <div class="media-body">
+                        <h4 class="filename text-success"><a href="{{repoDetail.html_url}}" target="_blank">{{repoDetail.name}}</a></h4>
+                        <small class="last-update">Created At:{{repoDetail.created_at|date}}&nbsp;&nbsp;|&nbsp;&nbsp;<i class="fa fa-clone" aria-hidden="true"></i>&nbsp;&nbsp;Clone:&nbsp;&nbsp;{{repoDetail.clone_url}}</small>
+                        <p class="description">{{repoDetail.description}}</p>
+                        <small class="last-update">Language: {{repoDetail.language}}&nbsp;&nbsp;|&nbsp;&nbsp;Last Updated: {{repoDetail.updated_at|daysCount}} Days Ago</small>
+                    </div>
+                </div>                       
+            </div>                  
+        </div>
+        </div>
+    
+    </div>
 </div>
     
