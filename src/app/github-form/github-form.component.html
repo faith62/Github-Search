@@ -2,7 +2,7 @@
     <h2 class="text-center">Create a new github and repo search</h2>
     <hr>    
 
-<form (ngSubmit)="submitUsername()" #githubForm="ngForm" name="githubForm">
+<form (ngSubmit)='submitUsername()' #githubForm="ngForm" name="githubForm">
     <div class="form-group">
         <label for="exampleInputEmail1">UserName</label>
         <input type="text" class="form-control" id="Username" [(ngModel)]= "username" name="username" #usename="ngModel" required placeholder="Enter GitHub username">
