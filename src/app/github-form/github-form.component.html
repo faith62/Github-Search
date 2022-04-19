@@ -5,7 +5,7 @@
 <form (ngSubmit)="submitUsername()" #gitForm="ngForm" name="gitForm">
     <div class="form-group">
     <label for="exampleInputEmail1">UserName</label>
-    <input type="text" class="form-control" id="Username" [(ngModel)]= "Username" name="username" placeholder="Enter GitHub username">
+    <input type="text" class="form-control" id="Username" [(ngModel)]= "username" name="username" placeholder="Enter GitHub username">
     </div>
     <!-- <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
@@ -15,4 +15,4 @@
     <button type="submit" class="btn btn-primary">Search </button>
 </form>
 </div>
-<app-git-search-results *ngIf="showData" (toggleBack)="showUserInput($event)"></app-git-search-results>
+<app-github-results *ngIf="showData" (toggleBack)="showUserInput($event)"></app-github-results>
