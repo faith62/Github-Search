@@ -9,11 +9,12 @@ import { NotFoundComponent } from './not-found/not-found.component';
 const routes: Routes = [
   // defined the path and component for each route
   {path: 'github', component:GithubComponent},
+  {path: 'Result', component:GithubResultsComponent},
   {path: 'user', component:User},
   {path: 'repos', component:Repository},
 
   { path: '', redirectTo:"/github", pathMatch:"full"},
-  {path: '**', component:NotFoundComponent}
+  {path: '**', component:NotFoundComponent} //error caters
 
 ];
 
